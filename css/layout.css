@@ -100,6 +100,7 @@
 .main_slider a {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 .main_slider a:hover .img_wrap img {
   transform: scale(1.2);
@@ -147,4 +148,57 @@
   100% {
     transform: translate(0);
   }
+}
+
+
+
+
+@media (max-width:900px) {
+  .main_visual {padding: 154px 0 20px; height: 100%; max-height: none;}
+  .main_visual .top_wrap {padding: 0 12px;}
+  .top_wrap .project_info {font-size: 1.5rem;}
+  .top_wrap .company_info {display: none;}
+  .top_wrap .scroll_info {display: none;}
+
+  .deco_line_wrap {margin-top: 7px;}
+  .deco_line_wrap .dl01 {height: 5px;}
+  .deco_line_wrap .dl02 {height: 3px;}
+
+  .main_slider {padding: 0 12px; height: auto;}
+  .main_slider .slide_wrap {flex-direction: column; width: 100%; align-items: flex-start; position: static;}
+  .main_slider .slide {width: 100%;}
+  .main_slider a {background: #d6d5b6; height: 220px;}
+  .main_slider .slide:nth-child(2) a {background: #cfcfcf;}
+  .main_slider .slide:nth-child(3) a {background: #d6d5b6;}
+  .main_slider .slide:nth-child(4) a {background: #eae8c6;}
+  .main_slider .slide:nth-child(5) a {background: #fe9b73;}
+  .main_slider .slide:nth-child(6) a {background: #edb074;}
+  .main_slider .slide:nth-child(7) a {background: #eae8c6;}
+  .main_slider .slide:nth-child(8) a {background: #9f6fb4;}
+  .main_slider .slide:nth-child(9) a {background: #83ddea}
+  .main_slider .slide:nth-child(10) a {background: #d9ff00;}
+  .main_slider .slide:nth-child(11) a {background: #c9dbf4;}
+  .main_slider .slide:nth-child(12) a {background: #cfcfcf;}
+  .main_slider .slide:nth-child(13) a {background: #7f84c7;}
+  .main_slider .slide:nth-child(14) a {background: #fe9b73;}
+  .main_slider .slide:nth-child(15) a {background: #d8b69b;}
+  .main_slider .slide:nth-child(16) a {background: #edb074;}
+  .main_slider .slide:nth-child(17) a {background: #edb074;}
+
+  .main_slider .img_wrap {padding-top: 67.27%; position: relative; max-width: 327px; height: auto;}
+  .main_slider .img_wrap img {position: absolute; left: 0; top: 0; object-fit: cover; height: auto;}
+
+  .main_slider .txt_wrap {padding: 12px 15px;}
+  .main_slider .txt_wrap .pr_client {font-size: 1.8rem;}
+  .main_slider .txt_wrap .pr_tit {font-size: 1.8rem;}
+  .main_slider .txt_wrap .pr_tool {font-size: 1.4rem;}
+  .main_slider .txt_wrap .link_deco {height: 24px; width: 24px; right: 15px; bottom: 15px;}
+
+
+
+
+
+
+
+
 }

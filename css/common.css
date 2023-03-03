@@ -833,3 +833,21 @@ textarea { width:100%; border:none; background: #f8f8f8; padding:15px;}
   gap: 2px;
 }
 
+#footer .mobile_copy {display: none;}
+
+
+
+
+@media (max-width:900px) {
+  /* #header */
+  #header .inner {justify-content: space-between; padding: 8px 29px 0 12px;}
+  #header .logo {padding-top: 4px;}
+  #header .logo img {height: 14px;}
+  #header .info_wrap {display: none;}
+  #header .contact_wrap {font-size: 1.5rem; line-height: 18px;}
+  #header .contact_wrap .btn_link {align-items: baseline;}
+  #header .contact_wrap img {width: 9px; height: 9px;}
+
+  #footer {background: #272727;}
+  #footer .mobile_copy {display: block;}
+}

@@ -5,7 +5,11 @@ $(function () {
     $('.deco_line').addClass('on');
   });
 
-  const slideContainer = document.querySelector('.slide-container');
+  // top_wrap
+  const pr_count = $('.slide').length;
+  document.querySelector('.pr_count').innerHTML = '(' + pr_count + ')';
+
+  // main_slider
   const slideWrap = document.querySelector('.slide_wrap');
   const slide = document.querySelector('.slide');
   // 슬라이더가로길이 가져오기
@@ -25,6 +29,15 @@ $(function () {
     e.preventDefault;
     moveSlider(e.deltaY);
     console.log(e.deltaY);
+
+    const sl = $('.slide_wrap').position().left;
+    // const w = slideWrapW - $(window).width();
+    const w = slideWrapW;
+    // 현재 위치의 스크롤 백분율
+    const slPer = Math.floor((sl / w) * -100);
+    console.log(sl + '========');
+
+    this.document.querySelector('.scroll').innerHTML = slPer;
   });
 
   function moveSlider(amount) {
