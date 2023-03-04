@@ -27,17 +27,19 @@ $(function () {
 
   window.addEventListener('wheel', function (e) {
     e.preventDefault;
-    moveSlider(e.deltaY);
+
+    if (winW > 899) {
+      moveSlider(e.deltaY);
+    }
     console.log(e.deltaY);
 
     const sl = $('.slide_wrap').position().left;
-    // const w = slideWrapW - $(window).width();
     const w = slideWrapW;
     // 현재 위치의 스크롤 백분율
     const slPer = Math.floor((sl / w) * -100);
     console.log(sl + '========');
 
-    this.document.querySelector('.scroll').innerHTML = slPer;
+    document.querySelector('.scroll').innerHTML = slPer;
   });
 
   function moveSlider(amount) {
