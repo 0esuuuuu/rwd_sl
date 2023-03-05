@@ -828,7 +828,6 @@ textarea { width:100%; border:none; background: #f8f8f8; padding:15px;}
 }
 
 #header .contact_wrap .btn_link {
-  display: block;
   color: #fff;
   display: flex;
   gap: 2px;

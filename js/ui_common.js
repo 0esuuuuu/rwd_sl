@@ -22,16 +22,12 @@ $(function () {
   // let moveMax = $('.slide:last-child').offset().left - slideW;
   let slideWrapPos = 0;
 
-  console.log(slideWrapW + '--');
-  console.log(slideWrap.offsetWidth + '++');
-
   window.addEventListener('wheel', function (e) {
     e.preventDefault;
 
     if (winW > 899) {
       moveSlider(e.deltaY);
     }
-    console.log(e.deltaY);
 
     const sl = $('.slide_wrap').position().left;
     const w = slideWrapW;
